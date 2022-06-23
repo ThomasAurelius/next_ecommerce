@@ -19,9 +19,9 @@ const Home = ( { products, bannerData }) => {
 
 
 
+
       
-      //1:01:04
-      <FooterBanner />
+      <FooterBanner footerBanner={bannerData && bannerData[0]} />
     </>
   )
 };
