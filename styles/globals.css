@@ -653,11 +653,11 @@ padding: 6px;
     }
 
     .hero-banner-container h1 {
-      font-size: 50px;
+      font-size: 70px;
     }
 
     .hero-banner-container h3 {
-      font-size: 40px;
+      font-size: 50px;
       z-index: 9999;
     }
 
@@ -684,7 +684,6 @@ padding: 6px;
     height: 42%;
     top: 30%;
     right: 3%;
-    flex-basis: 0;
   }
   .footer-banner-container{
     height: 560px;
@@ -828,12 +827,29 @@ padding: 6px;
 }
 
 @media screen and (max-width:550px) {
+  .hero-banner-container {
+    height: 800px;
+  }
+
+  .hero-banner-container button {
+    margin-top: 310px;
+  }
+  
+  .hero-banner-image {
+    width: 67%;
+    height: 42%;
+    top: 35%;
+    right: 20%;
+  }
+  
   .footer-banner-image {
     width: 57%;
     left: 40%;
     top: 8%;
     height: 46%
   }
+
+   
 }
 
 @media screen and (max-width:450px) {
