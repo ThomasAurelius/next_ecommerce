@@ -620,16 +620,17 @@ padding: 6px;
 
 @media screen and (max-width: 1200px) {
   .footer-banner-container {
-    
-  }
+      height: 560px;
+      margin-top: 80px;
+    }
   .banner-desc {
     flex-direction: column;
   }
     .footer-banner-image {
-      width: 47%;
-      left: 50%;
+      width: 57%;
+      left: 45%;
       top: 6%;
-      height: 56%
+      height: 57%
     }
     .hero-banner-container {
       line-height: 1.3;
@@ -649,10 +650,10 @@ padding: 6px;
       z-index: 10000;
     }
     .hero-banner-image {
-      width: 57%;
-      height: 62%;
-      top: 2%;
-      right: -6%;
+      width: 47%;
+      height: 72%;
+      top: 12%;
+      right: 6%;
     } 
 }
 
