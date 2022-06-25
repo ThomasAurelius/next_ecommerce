@@ -20,7 +20,6 @@ a {
 max-width: 1400px; 
 margin: auto;
 width: 100%;
-
 }
 .layout{
   padding: 10px;
@@ -49,7 +48,7 @@ width: 100%;
   font-size: 29px;
   font-weight: 600;
   margin: 60px 0px;
-  color: #f02d34;
+  color: #009fc7;
 }
 .marquee {
   position: relative;
@@ -74,7 +73,7 @@ width: 100%;
 }
 
  span.text-red {
-    -webkit-text-stroke: 1px #f02d34;
+    -webkit-text-stroke: 1px #009fc7;
     margin-left: 6px;
 }
 .logo{
@@ -99,7 +98,7 @@ width: 100%;
   right: -8px;
   font-size: 12px;
   color: #eee;
-  background-color: #f02d34;
+  background-color: #009fc7;
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -157,7 +156,7 @@ width: 100%;
 .hero-banner-container button{
    border-radius: 15px;
   padding: 10px 16px;
-  background-color: #f02d34;
+  background-color: #009fc7;
   color: white;
   border: none;
   margin-top: 40px;
@@ -225,7 +224,7 @@ text-align: end;
 }
 .footer-banner-container{
   padding: 100px 40px;
-  background-color: #f02d34;
+  background-color: #009fc7;
   border-radius: 15px;
   position: relative;
   height: 400px;
@@ -335,7 +334,7 @@ text-align: end;
 }
 .cart-num-items{
   margin-left: 10px;
-  color: #f02d34;
+  color: #009fc7;
 }
 .empty-cart{
   margin:40px;
@@ -391,7 +390,7 @@ padding: 20px 10px;
 }
 .remove-item{
   font-size: 24px;
-  color: #f02d34;
+  color: #009fc7;
   cursor: pointer;
   background: transparent;
   border: none;
@@ -419,7 +418,7 @@ padding: 30px 65px;
   margin-top: 10px;
   margin-top: 40px;
   text-transform: uppercase;
-  background-color: #f02d34;
+  background-color: #009fc7;
   color: #fff;
   cursor: pointer;
     transform: scale(1, 1);
@@ -430,24 +429,25 @@ padding: 30px 65px;
 }
 .product-detail-container{
   display: flex;
- gap: 40px;
- margin: 40px;
- margin-top: 60px;
- color: #324d67;
-
+  gap: 40px;
+  margin: 40px;
+  margin-top: 60px;
+  color: #324d67;
+  justify-content: center;
+  align-self: center;
+  
 }
 
 .product-detail-image{
   border-radius: 15px;
-   background-color: #ebebeb;
-
+  background-color: #ebebeb;
   width: 400px;
   height: 400px;
   cursor: pointer;
   transition: .3s ease-in-out;
 }
 .product-detail-image:hover{
-  background-color: #f02d34;
+  background-color: #009fc7;
 
 }
 .small-images-container{
@@ -464,10 +464,10 @@ padding: 30px 65px;
 }
 
 .selected-image{
-  background-color:#f02d34;
+  background-color:#009fc7;
 }
 .reviews{
-  color: #f02d34;
+  color: #009fc7;
   margin-top: 10px;
   display: flex;
   gap: 5px;
@@ -488,7 +488,7 @@ padding: 30px 65px;
   font-weight: 700 ;
   font-size: 26px;
   margin-top: 30px;
-  color:#f02d34;
+  color:#009fc7;
 }
 .price .old-price, .product-price .old-price, .price .old-price{
   color: gray;
@@ -506,12 +506,12 @@ padding: 30px 65px;
 }
 .buttons .add-to-cart{
   padding: 10px 20px;
-  border: 1px solid #f02d34 ;
+  border: 1px solid #009fc7 ;
   margin-top: 40px;
   font-size: 18px;
   font-weight: 500;
   background-color: white;
-  color: #f02d34;
+  color: #009fc7;
   cursor: pointer;
   width: 200px;
    transform: scale(1, 1);
@@ -523,7 +523,7 @@ padding: 30px 65px;
 .buttons .buy-now{
   width: 200px;
   padding: 10px 20px;
-  background-color: #f02d34;
+  background-color: #009fc7;
   color: white;
   border: none;
   margin-top: 40px;
@@ -536,6 +536,28 @@ padding: 30px 65px;
 .buttons .buy-now:hover{
   transform:scale(1.1,1.1)
 }
+.back-button-container {
+  display: flex;
+  justify-content: center;
+  }
+.buttons .back-button {
+  padding: 10px 20px;
+  border: 1px solid #009fc7;
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: white;
+  color: #009fc7;
+  cursor: pointer;
+  width: 200px;
+  transform: scale(1, 1);
+  transition: transform 0.5s ease;
+  margin-inline: auto;
+}
+
+.buttons .back-button:hover {
+  transform: scale(1.1, 1.1)
+}
 .quantity-desc{
   border: 1px solid gray;
 padding: 6px;
@@ -547,7 +569,7 @@ padding: 6px;
 }
 .quantity-desc .minus{
   border-right: 1px solid gray;
-  color: #f02d34;
+  color: #009fc7;
 }
 .quantity-desc .num{
   border-right: 1px solid gray;
@@ -574,7 +596,7 @@ padding: 6px;
 }
 .max-qty{
   font-weight: 500;
-  color: #f02d34;
+  color: #009fc7;
 }
 .success-wrapper, .cancel-wrapper{
   background-color: white;
@@ -621,12 +643,14 @@ padding: 6px;
 }
 .success .description .email{
   margin-left: 5px;
-  color: #f02d34;
+  color: #009fc7;
 }
 .product-max-qty{
   margin-top: 10px;
 }
+.back-button {
 
+}
 
 
 
