@@ -41,6 +41,7 @@ width: 100%;
   padding-inline: 20px;
   margin-inline: auto;
   top: 0px;
+  padding-top: 5px;
   z-index: 9999;
 }
 
@@ -150,11 +151,12 @@ width: 100%;
   width: 100%;
 
 }
-.hero-banner-container .beats-solo{
+.hero-banner-container .banner-title{
   font-size: 20px;
+  padding-left: 3px;
 }
 .hero-banner-container button{
-   border-radius: 15px;
+  border-radius: 15px;
   padding: 10px 16px;
   background-color: #009fc7;
   color: white;
@@ -173,7 +175,7 @@ width: 100%;
 .hero-banner-container h1{
   color: white;
   font-size: 10em;
-  margin-left: -20px;
+  margin-left: 0px;
   text-transform: uppercase;
 }
 .hero-banner-image{
@@ -241,7 +243,7 @@ text-align: end;
   border-radius: 15px;
   padding: 10px 16px;
   background-color: white;
-  color: red;
+  color: #009fc7;
   border: none;
   margin-top: 40px;
   font-size: 18px;
@@ -251,7 +253,7 @@ text-align: end;
 .banner-desc .left h3{
   font-weight: 900;
   font-size: 80px;
-  margin-left: 25px;
+  margin-left: 15px;
 }
 .banner-desc .left p{
   margin:18px;
@@ -273,6 +275,7 @@ text-align: end;
 }
 .banner-desc .right p{
   font-size: 18px;
+  padding-left: 3px;
 }
 .banner-desc .right .company-desc{
   font-size: 14px;
@@ -315,6 +318,7 @@ text-align: end;
 .footer-container .icons{
   font-size: 30px;
   display: flex;
+  justify-content: center;
   gap: 10px;
 }
  .cart-heading{
@@ -660,7 +664,7 @@ padding: 6px;
 
 @media screen and (max-width: 1200px) {
   .footer-banner-container {
-      height: 560px;
+      height: 520px;
       margin-top: 80px;
     }
   .banner-desc {
@@ -710,7 +714,7 @@ padding: 6px;
     right: 3%;
   }
   .footer-banner-container{
-    height: 560px;
+    height: 540px;
     margin-top: 80px;
   }
   .footer-banner-image{
@@ -848,6 +852,15 @@ padding: 6px;
       top: 8%;
       height: 46%
     }    
+  .footer-banner-container {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width:710px) {
+  .footer-banner-container {
+    height: 520px;
+  }
 }
 
 @media screen and (max-width:550px) {
@@ -872,8 +885,12 @@ padding: 6px;
     top: 8%;
     height: 46%
   }
+}
 
-   
+@media screen and (max-width:500px) {
+  .footer-banner-container {
+    height: 580px;
+  }
 }
 
 @media screen and (max-width:450px) {
@@ -885,12 +902,18 @@ padding: 6px;
   }
 
   .footer-banner-container {
-    height: 800px;
+    height: 750px;
     margin-top: 80px;
     padding-top: 300px;
   }
 
   .footer-banner-container .right h3 {
     font-size: 35px;
+  }
+}
+
+@media screen and (max-width:410px) {
+  .footer-banner-container {
+    height: 800px;
   }
 }
