@@ -5,6 +5,8 @@ import { client, urlFor } from '../../lib/client';
 import { Product } from '../../components';
 import { useStateContext } from '../../context/StateContext';
 
+import Link from 'next/link'
+
 const ProductDetails = ({ product, products }) => {
   const { image, name, details, price } = product;
   const [index, setIndex] = useState(0);
@@ -64,7 +66,15 @@ const ProductDetails = ({ product, products }) => {
             <button type="button" className="add-to-cart" onClick={() => onAdd(product, qty)}>Add to Cart</button>
             <button type="button" className="buy-now" onClick={handleBuyNow}>Buy Now</button>
           </div>
+          
         </div>
+        
+      </div>
+
+      <div className="back-button-container buttons">
+         <Link href='/'>
+            <button className='back-button' type='button'>Back</button>
+         </Link>
       </div>
 
       <div className="maylike-products-wrapper">
