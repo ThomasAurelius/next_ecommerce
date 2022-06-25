@@ -134,11 +134,14 @@ width: 100%;
 
 .product-name{
   font-weight: 500;
+  max-width: 240px;
+  text-align: center;
 }
 .product-price{
   font-weight: 800;
   margin-top: 6px;
   color: black;
+  text-align: center;
 }
 
 .hero-banner-container{
@@ -681,7 +684,7 @@ padding: 6px;
     }
 
     .hero-banner-container h1 {
-      font-size: 70px;
+      font-size: 75px;
     }
 
     .hero-banner-container h3 {
@@ -711,7 +714,7 @@ padding: 6px;
     width: 47%;
     height: 42%;
     top: 30%;
-    right: 3%;
+    right: 13%;
   }
   .footer-banner-container{
     height: 540px;
