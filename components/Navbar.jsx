@@ -19,7 +19,7 @@ const Navbar = () => {
            </Link>
         </p>
         <button type='button' className='cart-icon' onClick={() => setShowCart(true)}>
-           <AiOutlineShopping />
+           <AiOutlineShopping size={50} />
            <span className='cart-item-qty'>{totalQuantities}</span>
         </button>
         {showCart && <Cart />}
