@@ -97,11 +97,11 @@ width: 100%;
 .cart-item-qty{
   position: absolute;
   right: -8px;
-  font-size: 12px;
+  font-size: 16px;
   color: #eee;
   background-color: #009fc7;
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   text-align: center;
   font-weight: 600;
