@@ -180,8 +180,8 @@ width: 100%;
 }
 .hero-banner-image{
   position: absolute;
-  top: 0%;
-  right:20%;
+  top: 10%;
+  right:30%;
   width: 450px;
   height: 450px;
 }
