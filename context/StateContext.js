@@ -13,7 +13,9 @@ export const StateContext = ({ children }) => {
   const [totalQuantities, setTotalQuantities] = useLocalStorage('totalQuantities', '0');
   const [qty, setQty] = useState(1);
 
-  
+  if (totalQuantities && totalQuantities.length === 0) {
+    setTotalQuantities(0)
+  }
 
   let foundProduct;
   let index;
