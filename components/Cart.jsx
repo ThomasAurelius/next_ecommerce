@@ -7,9 +7,13 @@ import { useStateContext } from '../context/StateContext'
 import { urlFor } from '../lib/client'
 import getStripe from '../lib/getStripe'
 
+
+
 const Cart = () => {
   const cartRef = useRef();
-  const { totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuantity, onRemove } = useStateContext();
+  const { totalPrice, totalQuantities, cartItems, setCartItems, setShowCart, toggleCartItemQuantity, onRemove } = useStateContext();
+
+
 
   const handleCheckout = async () => {
     const stripe = await getStripe();
@@ -37,7 +41,7 @@ const Cart = () => {
         <button type="button" className='cart-heading' onClick={() => setShowCart(false)}>
           <AiOutlineLeft />
           <span className='heading'>Your Cart</span>
-          <span className='cart-num-items'>({totalQuantities} items</span>
+          <span className='cart-num-items'>{(totalQuantities.length === 0) ? 0 : totalQuantities} items</span>
         </button>
         {(cartItems.length < 1 && (
           <div className="empty-cart">

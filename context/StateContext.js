@@ -1,14 +1,19 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { toast } from 'react-hot-toast';
+import { useLocalStorage } from './useLocalStorage';
 
 const Context = createContext();
 
-export const StateContext = ({ children }) => {
+
+export const StateContext = ({ children }) => {  
+
   const [showCart, setShowCart] = useState(false);
-  const [cartItems, setCartItems] = useState([]);
+  const [cartItems, setCartItems] = useLocalStorage('cartItems', '')
   const [totalPrice, setTotalPrice] = useState(0);
-  const [totalQuantities, setTotalQuantities] = useState(0);
+  const [totalQuantities, setTotalQuantities] = useLocalStorage('totalQuantities', '0');
   const [qty, setQty] = useState(1);
+
+  
 
   let foundProduct;
   let index;
@@ -27,14 +32,19 @@ export const StateContext = ({ children }) => {
         }
       })
 
-      setCartItems(updatedCartItems);
+      setCartItems(updatedCartItems);     
+      localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
+   
+     
     } else {
       product.quantity = quantity;
       
-      setCartItems([...cartItems, { ...product }]);
+      setCartItems([...cartItems, { ...product }]);      
+      localStorage.setItem('cartItems', JSON.stringify([...cartItems, { ...product }]));
+    
     }
-
-    toast.success(`${qty} ${product.name} added to the cart.`);
+     
+    toast.success(`${qty} ${product.name} added to the cart.`);    
   } 
 
   const onRemove = (product) => {
@@ -44,6 +54,8 @@ export const StateContext = ({ children }) => {
     setTotalPrice((prevTotalPrice) => prevTotalPrice -foundProduct.price * foundProduct.quantity);
     setTotalQuantities(prevTotalQuantities => prevTotalQuantities - foundProduct.quantity);
     setCartItems(newCartItems);
+    localStorage.setItem('cartItems', JSON.stringify(newCartItems));
+    
   }
 
   const toggleCartItemQuantity = (id, value) => {
@@ -72,10 +84,13 @@ export const StateContext = ({ children }) => {
     }
     
     setCartItems(newCartItems)
+    localStorage.setItem('cartItems', JSON.stringify(newCartItems));
+    
   }
 
   const incQty = () => {
     setQty((prevQty) => prevQty + 1);
+    
   }
 
   const decQty = () => {
@@ -84,6 +99,7 @@ export const StateContext = ({ children }) => {
      
       return prevQty - 1;
     });
+    
   }
 
   return (
