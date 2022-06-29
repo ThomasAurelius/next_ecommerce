@@ -546,11 +546,11 @@ padding: 6px;
   cursor: pointer;
 }
 .quantity-desc .minus{
-  border-right: 1px solid gray;
+  /* border-right: 1px solid gray; */
   color: #009fc7;
 }
 .quantity-desc .num{
-  border-right: 1px solid gray;
+  /* border-right: 1px solid gray; */
   font-size: 20px;
 }
 .quantity-desc .plus{
