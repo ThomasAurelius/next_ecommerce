@@ -9,7 +9,7 @@ import Image from 'next/image'
 import logo from '../public/logo.jpg'
 
 const Navbar = () => {
-  const {showCart, setShowCart, totalQuantities }= useStateContext();
+  const {showCart, setShowCart, totalQuantities } = useStateContext();
   return (
     <div className="navbar">
       <div className='navbar-container'>
@@ -20,7 +20,9 @@ const Navbar = () => {
         </p>
         <button type='button' className='cart-icon' onClick={() => setShowCart(true)}>
            <AiOutlineShopping size={50} />
-           <span className='cart-item-qty'>{(totalQuantities.length === 0) ? 0 : totalQuantities}</span>
+           
+           <span className='cart-item-qty' suppressHydrationWarning={true} > {(totalQuantities && totalQuantities.length === 0) ? '0' : totalQuantities }</span>
+           
         </button>
         {showCart && <Cart />}
       </div>
@@ -28,4 +30,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar 
