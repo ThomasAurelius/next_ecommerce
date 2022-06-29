@@ -4,7 +4,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-
 ## Available Scripts
 
 First, run the development server:
@@ -23,7 +22,6 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-
 ## Table of contents
 
 -  [Overview](#overview)
@@ -39,6 +37,7 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 ## Overview
 
+Version 2.0 - Added localStorage tied to state for persistent cartItems usage.
 
 ### Screenshot
 
@@ -66,7 +65,7 @@ This was my first project with NextJS and I am loved working with it.
 ### Continued development
 
 I will continue to work on accessibility issues and improvements.
-I want to add localStorage for the cart, inventory of each item, and categories for pagination.
+I want to add an inventory count of each item, and categories for pagination.
 
 ### Useful resources
 
