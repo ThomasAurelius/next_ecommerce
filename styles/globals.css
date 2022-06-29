@@ -517,7 +517,7 @@ a {
 .back-button-container {
   display: flex;
   justify-content: center;
-  }
+}
 .buttons .back-button {
   padding: 10px 20px;
   border: 1px solid #009fc7;
@@ -532,13 +532,12 @@ a {
   transition: transform 0.5s ease;
   margin-inline: auto;
 }
-
 .buttons .back-button:hover {
   transform: scale(1.1, 1.1)
 }
 .quantity-desc{
   border: 1px solid gray;
-padding: 6px;
+  padding: 6px;
 }
 .quantity-desc span{
   font-size: 16px;
