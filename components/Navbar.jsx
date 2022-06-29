@@ -15,7 +15,9 @@ const Navbar = () => {
       <div className='navbar-container'>
         <p className='logo'>
            <Link href="/">
-            <Image src={logo} alt="Thomas Aurelius Logo" width="220px" height="40px" />
+            <a>
+              <Image src={logo} alt="Thomas Aurelius Logo" width="220px" height="40px" />
+            </a>
            </Link>
         </p>
         <button type='button' className='cart-icon' onClick={() => setShowCart(true)}>

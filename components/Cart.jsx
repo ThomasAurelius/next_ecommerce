@@ -41,7 +41,7 @@ const Cart = () => {
         <button type="button" className='cart-heading' onClick={() => setShowCart(false)}>
           <AiOutlineLeft />
           <span className='heading'>Your Cart</span>
-          <span className='cart-num-items'>{(totalQuantities) ? totalQuantities : '0'} items</span>
+          <span className='cart-num-items'>{totalQuantities} items</span>
         </button>
         {(cartItems.length < 1 && (
           <div className="empty-cart">
@@ -70,7 +70,7 @@ const Cart = () => {
                   <span className='minus' onClick={() => toggleCartItemQuantity(item._id, 'dec')} ><AiOutlineMinus /></span>
                   </p>
                   <p className='quantity-desc'>
-                      <span className='num' onClick=''>{item.quantity}</span>
+                      <span className='num' >{item.quantity}</span>
                   </p>
                   <p className='quantity-desc'>
                       <span className='plus' onClick={() => toggleCartItemQuantity(item._id, 'inc')}><AiOutlinePlus /></span>
