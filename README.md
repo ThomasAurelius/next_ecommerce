@@ -25,7 +25,7 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 ## Table of contents
 
 -  [Overview](#overview)
-   -  [Screenshot](#screenshot)
+   -  [Screenshots](#screenshots)
    -  [Links](#links)
 -  [My process](#my-process)
    -  [Built with](#built-with)
@@ -39,7 +39,7 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 Version 2.0 - Added localStorage tied to state for persistent cartItems usage.
 
-### Screenshot
+### Screenshots
 
 ![](./ss.png)
 ![](./ss2.png)
