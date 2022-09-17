@@ -42,6 +42,9 @@ Version 2.0 - Added localStorage tied to state for persistent cartItems usage.
 ### Screenshot
 
 ![](./ss.png)
+![](./ss2.png)
+![](./ss3.png)
+
 
 ### Links
 
